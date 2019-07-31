@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding">
+    <file url="jar://D:/maven/repository/com/alipay/common/alipay-common-lang/2.2.23/alipay-common-lang-2.2.23-sources.jar!/com/alipay/common/lang/security/OperationPrincipal.java" charset="GBK" />
+  </component>
 </project>
-
