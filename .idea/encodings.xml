@@ -2,5 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="jar://D:/maven/repository/com/alipay/common/alipay-common-lang/2.2.23/alipay-common-lang-2.2.23-sources.jar!/com/alipay/common/lang/security/OperationPrincipal.java" charset="GBK" />
+    <file url="jar://D:/maven/repository/com/alipay/echox/echox-common/1.1.16/echox-common-1.1.16-sources.jar!/com/alipay/echox/concurrent/EchoxRunnable.java" charset="GBK" />
+    <file url="jar://D:/maven/repository/com/alipay/echox/echox-common/1.1.16/echox-common-1.1.16-sources.jar!/com/alipay/echox/model/EchoxRecordModel.java" charset="GBK" />
   </component>
 </project>
