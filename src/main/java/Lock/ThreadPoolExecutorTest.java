@@ -22,11 +22,11 @@ public class ThreadPoolExecutorTest {
         // 固定数量的线程池
         ExecutorService service = Executors.newFixedThreadPool(3, threadFactory);
 
-        //        // 单个线程的线程池
-        //        ExecutorService service = Executors.newSingleThreadExecutor(threadFactory);
-        //
-        //        // 缓存线程池
-        //        ExecutorService service = Executors.newCachedThreadPool(threadFactory);
+        /*// 单个线程的线程池
+        ExecutorService service = Executors.newSingleThreadExecutor(threadFactory);
+
+        // 缓存线程池
+        ExecutorService service = Executors.newCachedThreadPool(threadFactory);*/
 
         for (int i = 0; i < 6; i++) {
             service.execute(new Run(i));
