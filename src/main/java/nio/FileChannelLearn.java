@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
+import java.nio.channels.Selector;
 
 /**
  * java NIO中通道的实现
@@ -19,7 +20,19 @@ public class FileChannelLearn {
 
     public static void main(String[] args) throws IOException {
 
-        readNio();
+        RandomAccessFile aFile = new RandomAccessFile("D:\\wjWorkHome\\JUCLearn\\src\\main\\java\\nio\\a.txt", "rw");
+        FileChannel channel = aFile.getChannel();
+        ByteBuffer readBuf = ByteBuffer.allocate(48);
+        channel.read(readBuf);
+        readBuf.flip();
+        while(readBuf.hasRemaining()){
+            System.out.print((char) readBuf.get());
+        }
+        readBuf.clear();
+    }
+
+    public static void selector() throws IOException {
+        Selector selector = Selector.open();
 
     }
 
